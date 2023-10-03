@@ -770,7 +770,7 @@ html.transition * {
 
 @media (max-width:480px){
 	.content{
-		max-width: 400px;
+		max-width: 380px;
 		.theme-switch {
 			height: 24px;
 			width: 50px;
@@ -782,19 +782,18 @@ html.transition * {
 			left: 2px;
 		}
 		.header {
-			width: 100%;
 			.header__width {
 				.header__logo{
 					margin-top: 10px;
 					width: 50px;
 				}
 				.header__nav {
-					margin: 20px 10px;
+					margin: 20px 15px;
 					display: flex;
 					justify-content: space-between;
 					ul{
 						li {
-							font-size: 14px;
+							font-size: 12px;
 						}
 					}
 				}
