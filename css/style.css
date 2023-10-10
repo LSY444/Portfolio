@@ -480,17 +480,19 @@ html.transition * {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
         .content .techstack .techstack__skillogo .techstack__row1 img, .content .techstack .techstack__skillogo .techstack__row2 img {
           width: 120px; }
       .content .techstack .techstack__skillogo .techstack__row2 {
         margin-top: 80px; }
   .content .projects {
-    margin-top: 20px; }
+    margin: 20px auto 0 auto; }
     .content .projects .projects__title {
       padding-top: 110px; }
-    .content .projects .projects__cardrow1, .content .projects .projects__cardrow2 {
+    .content .projects .projects__cardrow1,
+    .content .projects .projects__cardrow2 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -509,6 +511,7 @@ html.transition * {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      margin: 10px;
       max-width: 375px;
       border-radius: 20px;
       background: #FFF;
@@ -747,12 +750,23 @@ html.transition * {
       max-width: 400px; }
       .content .header .header__width .header__nav li {
         font-size: 16px; }
-    .content .home .home__text p, .content .home .home__text span {
-      font-size: 38px;
-      line-height: 46px; }
-    .content .home .home__logo .home__avatar {
-      max-width: 249px;
-      height: 100%; }
+    .content .home {
+      margin: 140px auto 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 500px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+      .content .home .home__text p, .content .home .home__text span {
+        font-size: 38px;
+        line-height: 46px; }
+      .content .home .home__logo .home__avatar {
+        margin: 0 auto;
+        max-width: 249px;
+        height: 100%; }
     .content .projects__card {
       width: 230px; }
       .content .projects__card .project__description {

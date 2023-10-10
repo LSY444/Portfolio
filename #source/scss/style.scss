@@ -133,7 +133,7 @@ html[data-theme='dark']  {
 	width: 26px;
 }
 input:checked+.slider {
-			background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+	background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
 }
 input:checked+.slider:before {
 	transform: translateX(26px);
@@ -413,7 +413,7 @@ html.transition * {
 			margin-top: 80px;
 			.techstack__row1,.techstack__row2{
 				display: flex;
-				justify-content: space-around;
+				justify-content: space-between;
 				img{
 					width: 120px;
 				}
@@ -424,23 +424,25 @@ html.transition * {
 		}
 	}
 	.projects {
-		margin-top: 20px;
+		margin: 20px auto 0 auto;
 		.projects__title {
 			padding-top: 110px;
 		}
-		.projects__cardrow1,.projects__cardrow2{
+		.projects__cardrow1,
+		.projects__cardrow2{
 			display: flex;
 			justify-content: space-between;
 		}
-			.projects__cardrow1{
-				margin-top: 110px;
-			}
-			.projects__cardrow2 {
-				margin: 60px 0;
-			}
+		.projects__cardrow1{
+			margin-top: 110px;
+		}
+		.projects__cardrow2 {
+			margin: 60px 0;
+		}
 		.projects__card {
 			display: flex;
 			flex-direction: column;
+			margin: 10px;
 			max-width: 375px;
 			border-radius: 20px;
 			background: #FFF;
@@ -692,6 +694,10 @@ html.transition * {
 			}	
 		}
 		.home{
+				margin: 140px auto 0 auto;
+					display: flex;
+					height: 500px;
+					flex-direction: column-reverse;
 			.home__text {
 				p,span {
 					font-size: 38px;
@@ -700,6 +706,7 @@ html.transition * {
 			}
 			.home__logo{
 				.home__avatar {
+					margin: 0 auto;
 					max-width: 249px;
 					height: 100%;
 				}
