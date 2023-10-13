@@ -87,11 +87,14 @@ html[data-theme='dark']  {
 		}
 	}
 }
+.header__darkbtn{
+	margin: 0 auto;
+	max-width: 1210px;
+	display: flex;
+	flex-direction: row-reverse;
+}
 .theme-switch-wrapper {
-		position: fixed;
-		top: 92px;
-		right:5.3%;
-		z-index: 88;
+margin-right: 5px;
 }
 .theme-switch-wrapper {
 	display: flex;
@@ -158,7 +161,7 @@ html.transition * {
 	margin: 0 auto;
 	.header{
 		width: 100%;
-		height: 90px;
+		height: 110px;
 		background-color: #fff;
 		position: fixed;
 		left: 0;
